@@ -1,0 +1,7 @@
+User-agent: *
+
+Disallow: /phpCheckPages
+Disallow: database.php
+Disallow: scipts.js
+Disallow: /cssFiles
+Disallow: /separateCss

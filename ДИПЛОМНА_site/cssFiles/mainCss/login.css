@@ -1,0 +1,42 @@
+main form p {
+    color: red !important;
+    text-align: center;
+    clear: both;
+  }
+  
+  main form span.req {
+    color: red;
+    
+}
+#links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.forgotten {
+    color: rgb(0, 145, 255) !important;
+    text-decoration: underline;
+
+    margin-top: 1em;
+}
+
+.forgotten:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+#forgottenPassForm {
+    display: none;
+}
+
+main form div.g-recaptcha {
+  margin-top: 1em;
+}
+
+main form div.g-recaptcha div:first-of-type {
+  margin: auto;
+}
+
+#messages {
+    margin-top: 2em;
+    text-align: center;
+}

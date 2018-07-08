@@ -1,0 +1,60 @@
+main div {
+    text-align: center;
+}
+
+main div img {
+    height: 19em;
+	box-shadow: 10px 10px 5px grey;
+    margin-bottom: 2em;
+
+}
+
+main div  div:nth-of-type(2) div {
+    border: 1px solid black;
+    margin-bottom: 2%;
+
+}
+
+main div  div:nth-of-type(2) div h4 {
+    border-bottom: 1px solid black;
+    background-color: lightgreen;
+    margin: 0;
+
+}
+main div a {
+
+	background-color: #1691BA;
+	color: black !important;
+	display: block;
+	border: 1px solid black;
+	border-radius: 15px;
+    margin-bottom: 2%;
+    
+}
+main div h4 {
+    padding: 1% 0 1% 0;
+   
+}
+
+main div a:hover {
+	background-color: white;
+}
+
+
+@media screen and (max-width: 1921px){
+
+    main > div a {
+        font-size: 1.3em;
+    }
+    
+    
+}
+@media screen and (max-width: 1100px){
+
+    main > div a {
+        font-size: 1.1em;
+    }
+
+    
+    
+}

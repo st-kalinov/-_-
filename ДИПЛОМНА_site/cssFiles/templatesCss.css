@@ -1,0 +1,321 @@
+
+/* CONTACTS   CSS ------------------------------------------------------------------------ */
+
+body #topContacts {
+	height: auto;
+	overflow: auto;
+	text-align: center;
+	margin-top: 1%;
+} 
+
+body #topContacts {
+    background: linear-gradient(#AAE6FA, white);
+}
+
+body #topContacts p {
+    display: inline-block;
+	color: black;
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+body #topContacts p i.material-icons {
+		 font-size: 1em;
+         color: black;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    body #topContacts p  {
+       display: block;
+       font-size: 0.7em;
+    }
+ 
+	
+}
+
+
+/* HEADER   CSS ------------------------------------------------------------------------ */
+
+header.pageHeader {
+    
+	height: 15em;
+	text-align: center;
+	
+	letter-spacing: 10px;
+	background-image: url(../images/header/dogcat.png), url(../images/header/rsz_1rsz_catt.png);
+	background-position: left center, right center;
+	background-repeat: no-repeat, no-repeat;
+    background-size: 25% auto;  
+  
+}
+
+header.pageHeader img {
+
+	margin: 0 auto;
+    max-width:85%;
+    max-height:85%;
+	
+}
+
+header.pageHeader h2 {
+
+    margin: 0% 0% 0.2% 0%;
+    color: rgb(53, 193, 240);
+    text-shadow: 1px 1px 1px rgb(68, 196, 255), 1px 1px 5px rgb(20, 75, 255), 3px 0 0px rgb(78, 199, 255);
+
+
+}
+
+@media screen and (max-width: 1921px){
+
+    header.pageHeader {
+        height: 16em;
+	}
+    header.pageHeader img {
+        max-width:90%;
+        max-height:90%;
+    
+    }
+}
+
+@media screen and (max-width: 1100px){
+    header.pageHeader {
+        height: 13em
+	}
+
+}
+
+@media screen and (max-width: 500px){
+    header.pageHeader {
+        height: 9em
+	}    
+    header.pageHeader img {
+        max-width:60%;
+        max-height:60%;
+    
+    } 
+
+}
+
+/* NAVIGATION  CSS ------------------------------------------------------------------------ */
+
+nav {
+	background: linear-gradient(#AAE6FA, white);
+	border: 1px solid black;
+	height: auto;
+
+}
+
+
+
+ul.nav > li {
+	margin-right: 0.7em;
+	min-width: 5em;
+    text-align: center;
+}
+
+
+ul.nav > li:hover {
+    background-color:lightblue !important;
+	border-radius: 0.5em;
+	
+}
+
+ul.nav > li > a {
+	padding: 1.3em 0 1.3em 0;
+	
+}
+
+.dropdown-menu {
+    width: 19em;
+    padding: 0;
+    border-radius: 15px;
+}
+
+.dropdown-menu > li:hover {
+	cursor: pointer;
+}
+
+
+.dropdown-menu li.firstSub {  
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+
+.dropdown-menu > li:hover, .secondSub li:hover {
+    background: linear-gradient(white,#AAE6FA, white) !important;
+    
+}
+
+.secondSub {
+	position: absolute;
+	left: 100%;
+	display: none;
+	list-style-type: none;
+	padding: 0;
+    margin: 0 !important;
+	text-align: left;
+	background-color: white;
+    min-width: 17em;
+	height: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 15px;
+	
+}
+
+.secondSub li {
+    padding: 0.5em;
+    text-decoration: underline;
+    border-radius: 15px;
+}
+
+
+.menu1 { top: 0px; } 
+.menu2 { top: 40px; }
+.menu3 { top: 80px; }	
+.menu4 { top: 130px; }
+
+@media screen and (max-width: 1921px){
+
+    .secondSub li {
+        font-size: 1em;
+        
+    }
+    .firstSub {
+        font-size: 1.15em;
+    }
+}
+@media screen and (max-width: 1600px){
+
+    li.secondSub {
+        font-size: 1em !important;
+        
+    }
+    .firstSub {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 957px) {
+
+    .secondSub {
+        font-size: 1em;
+        
+    }
+    .firstSub {
+        font-size: 1em;
+    }
+
+    .nav li, .dropdown-menu li.firstSub a {
+        font-weight: bold;
+    }
+    
+    .dropdown-menu {
+        border-radius: 0;
+        padding-top: 10px;
+        border: 1px solid gray !important;
+    }
+
+    .dropdown-menu > li {
+        padding-left: 1.2em;
+        
+    }
+
+    .dropdown-menu li.firstSub  {
+        padding: 0.5em 0.5em 1em 3em !important;
+        text-align: left;
+    }
+
+    .secondSub {
+     
+        position: static;
+        box-shadow: none;
+        background-color: transparent;
+        padding-left: 1em;
+
+    }
+
+    .secondSub li a {
+        display: block;
+        padding: 0px;
+        color: blue !important;
+    }
+
+    .secondSub li a:hover {
+       color: rgb(2, 19, 38);
+        
+    }
+
+}
+
+
+/* FOOTER  CSS ------------------------------------------------------------------------ */
+
+footer  {
+    background: linear-gradient(#AAE6FA, white);
+    height: auto;
+    text-align: center;
+    padding: 0 5em 0 5em;
+    color: #383C3D;
+
+}
+
+footer  h4 {
+    margin-bottom: 1.5em;
+}
+footer #footerrow div:first-of-type {
+    text-align: left;
+}
+
+footer #footerrow div {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+  
+}
+footer  #footerrow > div ul {
+	list-style: none;
+
+}
+footer  #footerrow div:last-child ul {
+
+    padding: 0;
+}
+
+footer  #footerrow div:last-child ul li {
+	border-bottom: 1px solid lightblue;
+	
+}
+
+footer #footerrow div:last-child ul li a {
+	display: block;
+}
+
+footer #footerrow div:last-child ul li:hover {
+	
+    background: linear-gradient(lightblue, white);
+    
+}
+
+
+footer #footerrow ul li {
+	
+	margin: 0.3em;
+	
+}
+
+@media screen and (max-width: 1205px) {
+
+   footer #footerrow div:first-of-type {
+        text-align: center;
+    }
+
+    footer #footerrow div {
+        margin-bottom: 1.5em;
+    }
+    
+}
+

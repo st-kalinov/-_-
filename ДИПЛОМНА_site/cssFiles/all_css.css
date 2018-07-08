@@ -1,0 +1,216 @@
+body {
+	background: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.45em;
+
+}
+
+
+p, nav ul li a, ul li, label {
+	color: #383C3D !important;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1, h2, h5 {
+    text-align: center;
+    font-weight: bold;
+
+}
+
+h3, h4 {
+	text-decoration: underline;
+    font-weight: bold;
+
+}
+
+header.pageHeader, footer, main, body #topContacts, main section article, main #myCarousel .item img, body  nav {	
+	box-shadow: 6px 7px 5px gray;
+	margin-bottom: 2%;
+	border-radius: 15px;
+    border-right: 3px solid gray !important;
+    border-bottom: 3px solid gray !important;
+    border-top: 1.5px solid lightblue !important;
+    border-left: 1.5px solid lightblue !important;
+    
+}
+
+
+main {
+    
+    
+    min-height: 50em;
+	background: linear-gradient(#AAE6FA, white);
+    padding: 3%;
+
+}
+
+main header {
+	box-shadow: 6px 7px 5px gray;
+	letter-spacing: 8px;
+	border-radius: 60px;
+	background: linear-gradient(#AAE6FA, white);
+	margin-bottom: 2em;
+    border-right: 3px solid gray !important;
+    border-bottom: 3px solid gray !important;
+    border-top: 1.5px solid lightblue !important;
+    border-left: 1.5px solid lightblue !important;
+    
+}
+
+
+@media screen and (max-width: 1921px){
+
+    body > address {
+        font-size: 1.3em;
+    }
+    body h1 {
+        font-size: 2.4em;
+    }
+    body h2 {
+        font-size: 2.2em;
+    }
+    body h3 {
+        font-size: 1.8em;
+    }
+    body h4 {
+        font-size: 1.5em;
+    }
+    body p, ul li, h5 {
+        font-size: 1.3em;
+    }
+    body label {
+        font-size: 1.2em;
+    }
+    
+}
+
+@media screen and (max-width: 1600px) {
+
+    body address {
+        font-size: 1.2em;
+    }
+    body h1 {
+        font-size: 2.3em;
+    }
+    body h2 {
+        font-size: 2.1em;
+    }
+    body h3 {
+        font-size: 1.7em;
+    }
+    body h4 {
+        font-size: 1.4em;
+    }
+    body p, ul li, h5 {
+        font-size: 1.2em;
+    }
+    body label {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    body address {
+        font-size: 1.15em;
+    }
+    body h1 {
+        font-size: 2.2em;
+    }
+    body h2 {
+        font-size: 2.05em;
+    }
+    body h3 {
+        font-size: 1.6em;
+    }
+    body h4 {
+        font-size: 1.3em;
+    }
+    body p, ul li, h5  {
+        font-size: 1.15em;
+    }
+    body label {
+        font-size: 1.05em;
+    }
+}
+
+@media screen and (max-width: 1205px) {
+    body address {
+        font-size: 1.05em;
+    }
+    body h1 {
+        font-size: 2.1em;
+    }
+    body h2 {
+        font-size: 2em;
+    }
+    body h3 {
+        font-size: 1.5em;
+    }
+    body h4 {
+        font-size: 1.2em;
+    }
+    body p, ul li, h5  {
+        font-size: 1.1em;
+    }
+    body label {
+        font-size: 1.05em;
+    }
+    
+}
+
+@media screen and (max-width: 1100px){
+
+    body address {
+        font-size: 1.05em;
+    }
+    body h1, h2, h3, h4 {
+        font-weight: bold;
+    }
+    body h1 {
+        font-size: 2.4em;
+    }
+    body h2 {
+        font-size: 1.5em;
+    }
+    body h3 {
+        font-size: 1.3em;
+    }
+    body h4 {
+        font-size: 1.05em;
+    }
+    body p, ul li, h5  {
+        font-size: 1em;
+    }
+    body label {
+        font-size: 0.9em;
+    }
+    
+}
+@media screen and (max-width: 770px){
+    body address {
+        font-size: 1.2em;
+    }
+    body h1 {
+        font-size: 2.1em;
+    }
+
+}
+
+@media screen and (max-width: 340px){
+
+    body address {
+        font-size: 1.2em;
+    }
+    main header {
+        letter-spacing: 5px;
+    }
+
+
+} 
+
+@media screen and (max-width: 355px){
+    div.g-recaptcha  {
+        transform:scale(0.89);
+        transform-origin:0 0;
+    }
+}

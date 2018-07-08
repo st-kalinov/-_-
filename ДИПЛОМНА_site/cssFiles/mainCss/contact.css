@@ -1,0 +1,52 @@
+
+main section h3, main section form input, main section form textarea {
+    margin-bottom: 2em;
+}
+main section h3 {
+    text-align: center;
+}
+main section form textarea {
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 40em;
+    min-height: 30em;
+}
+main section form p:first-of-type, main section form p:last-of-type, main section form span {
+    color: red !important;
+}
+main section form p {
+    text-align: center;
+}
+main section ul {
+    list-style: none;
+    padding-left: 0;
+}
+main section ul li {
+    margin-bottom: 3%;
+    border-bottom: 2px dotted black;  
+}
+
+main section ul li span {
+    float: right;
+}
+main section iframe {
+    border: 3px solid gray;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#alertMsg {
+    margin-bottom: 2em;
+}
+main section address, main section ul {
+    margin-bottom: 4em;
+    
+}
+main section div.g-recaptcha {
+    margin-bottom: 1em;
+}
+main section div.g-recaptcha div:first-of-type {
+   
+    margin: auto;
+}
+

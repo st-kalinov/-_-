@@ -1,0 +1,30 @@
+main {
+
+    form {
+        p {
+            color: red !important;
+            text-align: center;
+            clear: both;
+        }
+
+        span.req {
+            color: red;
+        }
+
+        div.g-recaptcha {
+            margin-top: 1em;
+        }
+
+        div.g-recaptcha div:first-of-type {      
+            margin: auto;
+        }
+    }
+
+    @media screen and (max-width: 770px){
+        main header  {
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    }
+}

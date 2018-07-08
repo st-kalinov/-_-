@@ -1,0 +1,164 @@
+main {
+  background: none;
+  border: 0px !important;
+  box-shadow: none;
+  margin: 0 0 2% 0 !important;
+  padding: 0 0;
+}
+
+main div.pageLinks {
+  text-align: center;
+  margin: 2% 0;
+}
+
+main div.pageLinks .activePage {
+  background-color: #f7a900 !important;
+}
+
+main div.pageLinks a {
+  padding: 0.5em 1em;
+  border: 2px solid gray;
+  border-radius: 10px;
+  margin-right: 0.7em;
+  font-weight: bold;
+  background-color: white;
+  color: #090909;
+  box-shadow: 6px 7px 5px gray;
+}
+
+aside {
+  background-color: #ccf0fc;
+  box-shadow: 6px 7px 5px gray;
+  border-radius: 15px;
+  border-right: 3px solid gray !important;
+  border-bottom: 3px solid gray !important;
+  border-top: 1.5px solid lightblue !important;
+  border-left: 1.5px solid lightblue !important;
+  padding: 0% 1% 1% 1%;
+  margin-bottom: 2em;
+}
+
+aside h5 {
+  text-align: center;
+  margin-top: 2em;
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid #40d2ff;
+}
+
+aside button {
+  margin-top: 3em;
+}
+
+aside label {
+  font-weight: normal;
+}
+
+aside input[type=checkbox]:checked + label {
+  font-weight: bold;
+}
+
+section {
+  padding-left: 5% !important;
+}
+
+section div.item {
+  display: flex;
+  box-shadow: 6px 7px 5px gray;
+  padding: 0.5em 0em;
+  background-color: white;
+  border-radius: 30px;
+  margin-bottom: 1em;
+  border: 2px ridge gray;
+  text-align: center;
+}
+
+section div.item ul, section div.item li, section div.item p {
+  font-family: Helvetica, sans-serif;
+}
+
+section div.item div.images {
+  width: 20%;
+  border-right: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section div.item div.images img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+section div.item div.info {
+  width: 76%;
+  margin-left: 2%;
+}
+
+section div.item div.info h4 {
+  text-align: center;
+  color: #00800b;
+  margin-bottom: 1em;
+}
+
+section div.item div.info button[type="button"] {
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+section div.item div.info button.btn-info + p {
+  display: none;
+  border: 1px;
+  margin-bottom: 1em;
+  background-color: lightblue;
+  border-radius: 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+section div.item div.info ul {
+  padding: 0;
+}
+
+section div.item div.info ul li {
+  list-style: none;
+}
+
+section div.item div.info div.price {
+  border-top: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0.5em;
+  text-align: left;
+}
+
+section div.item div.info div.price :first-child {
+  text-align: left;
+  font-weight: bold;
+}
+
+section div.item div.info div.price ul:last-child li {
+  font-weight: bold;
+  font-size: 1.3em;
+  color: red !important;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 0.2em;
+  text-align: center;
+}
+
+section div.item div.info div.price h5 {
+  margin: 0 0 1em 0;
+  color: green;
+}
+
+@media screen and (max-width: 570px) {
+  div.price {
+    flex-direction: column;
+  }
+  div.price ul {
+    text-align: center !important;
+  }
+  div.price ul h5 {
+    text-align: center !important;
+  }
+}

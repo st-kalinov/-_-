@@ -1,0 +1,35 @@
+main {
+    min-height: 20em;
+    header {
+        letter-spacing: 0px;
+    }
+    section {
+        width: 100%;
+       
+        figure {
+            margin-bottom: 1em;
+            img {
+                width: 95%;
+                min-height: 5em;
+                max-height: 18em;
+                border: 4px outset rgb(255, 255, 255);
+                border-radius: 4em;
+                box-shadow: 6px 7px 5px grey;
+            }
+        }
+        article {
+
+            padding: 2em !important;
+            text-align: justify;
+            background: linear-gradient(white,#AAE6FA, white);
+            box-shadow: 6px 7px 5px grey;
+            border: 4px outset rgb(255, 255, 255) !important;
+            border-radius: 4em;
+
+             p {
+                text-indent: 50px;
+             }
+        }
+
+    }
+}

@@ -1,0 +1,179 @@
+$borderBottom: 2px solid rgb(64, 210, 255);
+
+@mixin shadowBorder {
+    box-shadow: 6px 7px 5px gray;
+	border-radius: 15px;
+    border-right: 3px solid gray !important;
+    border-bottom: 3px solid gray !important;
+    border-top: 1.5px solid lightblue !important;
+    border-left: 1.5px solid lightblue !important;
+    padding: 0% 1% 1% 1%;
+
+}
+
+main {
+    background: none;
+    border: 0px !important;
+    box-shadow: none;
+    margin: 0 0 2% 0 !important;
+    padding: 0 0;
+
+    div.pageLinks {
+        text-align: center;
+        margin: 2% 0;
+
+        .activePage {
+            background-color: rgb(247, 169, 0) !important;
+        }
+
+        a {
+            padding: 0.5em 1em;
+            border: 2px solid gray;
+            border-radius: 10px;
+            margin-right: 0.7em;
+            font-weight: bold;
+            background-color: rgb(255, 255, 255);
+            color: rgb(9, 9, 9);
+            box-shadow: 6px 7px 5px gray;
+           
+        }
+    }
+
+}
+
+
+aside {
+    background-color: rgb(204, 240, 252);
+    @include shadowBorder;
+    margin-bottom: 2em;
+
+    
+
+    h5 {
+        text-align: center;
+        margin-top: 2em;
+        padding-bottom: 0.5em;
+        border-bottom: $borderBottom;
+    }
+    button {
+        margin-top: 3em;
+    }
+    label {
+        font-weight: normal;
+    }
+    
+    input[type=checkbox]:checked + label {
+        font-weight: bold;
+    }
+
+}
+
+section {
+        padding-left: 5% !important; 
+
+
+    
+}
+
+section div.item {
+   
+    display: flex;
+	box-shadow: 6px 7px 5px gray;
+    padding: 0.5em 0em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    margin-bottom: 1em;
+    border: 2px ridge gray;
+    text-align: center;
+    ul, li, p {
+        font-family: Helvetica, sans-serif;
+
+    }
+    div.images {
+        width: 20%;
+        border-right: 1px solid gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 100%;
+            border-radius: 25px;
+        }
+    }
+
+    div.info {
+        width: 76%;
+        margin-left: 2%;
+
+        h4 {
+
+            text-align: center;
+            color: rgb(0, 128, 11);
+            margin-bottom: 1em;
+        }
+        button[type="button"] {
+            margin-bottom: 1em;
+            font-weight: bold;
+        }
+        button.btn-info + p {
+            display: none;
+            border: 1px;
+            margin-bottom: 1em;
+            background-color: lightblue;
+            border-radius: 15px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        ul {
+            padding: 0;
+
+            li {
+                list-style: none;
+            }
+        }
+        div.price {
+            border-top: 1px solid rgb(255, 255, 255);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 0.5em;
+            text-align: left;
+            :first-child {
+                text-align: left;
+                font-weight: bold;
+                
+            }
+            ul:last-child li {
+                font-weight: bold;
+                font-size: 1.3em;
+                color: red !important;
+                border: 1px solid black;
+                border-radius: 20px;
+                padding: 0.2em;
+                text-align: center;
+            }
+            h5 {
+
+                margin: 0 0 1em 0;
+                color: green;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 570px){
+
+    div.price {
+        flex-direction: column;
+        
+        ul {
+            text-align: center !important;
+
+            h5 {
+                text-align: center !important;
+            }
+        }
+    }
+
+
+} 

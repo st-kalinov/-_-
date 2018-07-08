@@ -1,0 +1,102 @@
+<nav class="navbar-inverse">
+    <div class="navbar-header">
+        <!-- butona pri skrito menuto -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+            <li>
+                <a href="./index.php">Начало</a>
+            </li>
+            <li class="dropdown-toggle">
+                <a data-toggle="dropdown" href="#">Услуги
+                    <i class="fas fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                    <li class="firstSub ">Профилактика
+                        <i class="fas fa-angle-right"></i>
+                        <ul class="secondSub menu1">
+                            <li>
+                                <a href="#">Вътрешно обезпаразитяване</a>
+                            </li>
+                            <li>
+                                <a href="#">Външно обезпаразитяване</a>
+                            </li>
+                            <li>
+                                <a href="https://www.w3schools.com/bootstrap/bootstrap_ref_all_classes.asp">Ваксинации</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="firstSub">Лечение
+                        <i class="fas fa-angle-right"></i>
+                        <ul class="secondSub menu2">
+                            <li>
+                                <a href="#">Вътрешно обезпаразитяване</a>
+                            </li>
+                            <li>
+                                <a href="#">Външно обезпаразитяване</a>
+                            </li>
+                            <li>
+                                <a href="https://www.w3schools.com/bootstrap/bootstrap_ref_all_classes.asp">Ваксинации</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="firstSub">Профилактика
+                        <i class="fas fa-angle-right"></i>
+                        <ul class="secondSub menu3">
+                            <li>
+                                <a href="#">Вътрешно обезпаразитяване</a>
+                            </li>
+                            <li>
+                                <a href="#">Външно обезпаразитяване</a>
+                            </li>
+                            <li>
+                                <a href="https://www.w3schools.com/bootstrap/bootstrap_ref_all_classes.asp">Ваксинации</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="drodown-toggle">
+                <a data-toggle="dropdown" href="#">Зоомагазин <i class="fas fa-angle-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li class="firstSub"><a href="./foods.php">Храни</a></li>
+                    <li class="firstSub"><a href="./accessories.php">Аксесоари</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./gallery.php">Галерия</a>
+            </li>
+            <li>
+                <a href="./crew.php">Екип</a>
+            </li>
+            <li>
+                <a href="./faq.php">Въпроси/отговори</a>
+            </li>
+            <li>
+                <a href="./contact.php">Контакти</a>
+            </li>
+            <?php
+        
+            if(isset($_SESSION['valid_user']))
+            {
+                echo "<ul class=\"nav navbar-nav navbar-right\">";
+                echo '<li><a href="logout.php">Излез, '.$_SESSION['valid_user'].'</a></li>';
+                echo "</ul>";
+            }
+            else
+            {
+                echo "<ul class=\"nav navbar-nav navbar-right\">";
+                echo "<li><a href=\"registration.php\"><span class='glyphicon glyphicon-user' style='margin-right: 5px;'></span>Регистрация</a></li>";
+                echo "<li><a href=\"login.php\"><span class='glyphicon glyphicon-user' style='margin-right: 5px;'></span>Вход</a></li>";
+                echo "</ul>";
+            }
+        
+            ?>
+        </ul>
+    </div>
+</nav>

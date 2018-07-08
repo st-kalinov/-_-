@@ -1,0 +1,36 @@
+body #topContacts {
+	
+	height: auto;
+	overflow: auto;
+	text-align: center;
+	margin-top: 1%;
+} 
+
+body #topContacts {
+    background: linear-gradient(#AAE6FA, white);
+    
+}
+
+body #topContacts p {
+	
+    display: inline-block;
+	color: black;
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+body #topContacts p i.material-icons {
+		 font-size: 1em;
+         color: black;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    body #topContacts p  {
+       display: block;
+       font-size: 0.7em;
+    }
+ 
+	
+} 

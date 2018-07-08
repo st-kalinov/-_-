@@ -1,0 +1,90 @@
+.navbar-inverse .navbar-nav>li>a.active
+ {
+    background: linear-gradient(white,rgb(23, 212, 255)) !important;
+    border-radius: 0.5em;
+}
+
+.navbar-inverse .navbar-nav>.open>a, 
+.navbar-inverse .navbar-nav>.open>a:focus,
+.navbar-inverse .navbar-nav>.open>a:hover
+ {
+    background-color: lightblue;
+    border-radius: 0.5em;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    background-color: transparent;
+}
+
+/* smqna na rezoliuciqta na koqto pri hamburger menuto 1vite podmenuta zaemat 100%, kakto i fona zad tqh */
+@media (max-width: 957px) {
+    .navbar-nav .open .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .navbar-inverse .navbar-nav>.open>a, 
+    .navbar-inverse .navbar-nav>.open>a:focus,
+    .navbar-inverse .navbar-nav>.open>a:hover
+     {
+        background-color: lightblue;
+        border-radius: 0.5em;
+    }
+
+    .navbar-nav .open .dropdown-menu {
+        background: linear-gradient(white,#AAE6FA, white) !important;
+    }
+}
+
+@media (max-width: 960px) {
+.navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu>li>a {
+    padding: 5px 15px 5px 0px !important;
+}
+
+/* change resolution on which hambureg menu will show up */
+@media (max-width: 960px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+
+
+
+}
